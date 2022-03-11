@@ -1,0 +1,67 @@
+@import url(./base.css);
+
+.km-3{
+    background-color: var(--beige-color);
+}
+
+.km-3__image {
+    /* position: relative; */
+    background-image: url(../image/trang-chu/promo_1711_off40.jpg);
+    height: 487px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    /* opacity: 0.8; */
+}
+
+.page-flex {
+    display: flex;
+    justify-content:space-between;
+}
+
+.page-flex a:hover {
+    font-weight: 500;
+    color: var(--orange-color);
+}
+
+.not-update {
+    opacity: 0.6;
+}
+
+.not-update:hover {
+    opacity: 0.6;
+    cursor: not-allowed;
+    color: var(--white-color);
+    background-color: var(--red-color);
+}
+
+p, li, .page-flex {
+    font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+    .km-3__image {
+        height: 397px
+    }
+    .extra-large-text {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 992px) {
+    .km-3__image {
+        height: 300px
+    }
+    .extra-large-text {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 765px) {
+    .km-3__image {
+        height: 210px
+    }
+}
+

@@ -1,0 +1,113 @@
+@import url(./base.css);
+
+body {
+    background-color: var(--beige-color);
+}
+
+.dialog {
+    /* position: fixed; */
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+
+.dialog-body {
+    border: solid 1px var(--red-color);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 16px;
+    background-color: #fff;
+    min-height: 534px;
+    max-width: 435px;
+}
+
+.dialog-body__logo img {
+    width: 183px;
+}
+
+#province-list {
+    width: 100%;
+}
+
+select {
+        border-radius: 5px;
+        width: 125px;
+        height: 38px;
+}
+
+.alert {
+    padding: 0 !important;
+    visibility: hidden;
+}
+
+.alert.error {
+    visibility: visible;
+}
+
+.alert i {
+    visibility: hidden;
+    position: absolute;
+}
+
+.alert.error i {
+    visibility: visible;
+    position: absolute;
+}
+
+.alert.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.alert small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: -22px;
+    left: 20px;
+    visibility: hidden;
+}
+
+.alert.error small {
+    visibility: visible;
+    color: #e74c3c;
+    position: absolute;
+    bottom: -22px;
+    left: 20px;
+}
+
+@media (max-width: 991px) {
+    .dialog {
+        left: 0%;
+    }
+}
+
+@media (max-width: 765px) {
+    .float-end {
+        float: left !important;
+        padding-left: 12px !important;
+        padding-top: 12px !important;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    #ward-list {
+        margin-top: 8px;
+    }
+    
+}
+
+@media (max-width: 576px) {
+
+}
+
+

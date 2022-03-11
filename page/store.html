@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Owlcarousel -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+    <!-- Personal -->
+    <link rel="stylesheet" href="../lib/font/font.css">
+    <link rel="stylesheet" href="../public/css/store.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="main_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 nav-margin">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="../index.html">
+                            <span>
+                                <img src="../public/image/logo/header-logo.png" alt="header-logo">
+                            </span>
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="menu_icon">
+                                <i class="fas fa-bars"></i>
+                            </span>
+                        </button>
+                        <div class="navbar-collapse main-menu-item collapse" id="navbarNavAltMarkup">
+                            <ul class="navbar-nav">
+                                <li id="menu-nav-btn" class="nav-item dropdown nav-item--separate">
+                                    <a class="dropdown-toggle" href="#" id="navbarDropdown_1" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Thực Đơn
+                                    </a>
+                                    <div id="product-dropdown" class="dropdown-menu menu-dropdown disable" aria-labelledby="navbarDropdown_1">
+                                        <a class="dropdown-item" href="category.html">
+                                            Gà giòn không xương</a>
+                                        <a class="dropdown-item" href="single-product.html">Gà giòn cay</a>
+                                        <a class="dropdown-item" href="single-product.html">Gà giòn không cay</a>
+                                        <a class="dropdown-item" href="single-product.html">Hamburger</a>
+                                        <a class="dropdown-item" href="single-product.html">Món ăn kèm</a>
+                                        <a class="dropdown-item" href="./detail-menu.html">Món lẻ</a>
+                                        <a class="dropdown-item" href="single-product.html">Đồ uống - Tráng miệng</a>
+                                    </div>
+                                </li>
+                                <li id="promotion-menu" class="nav-item nav-item--separate">
+                                    <!-- <a class="" href="./page/km-1.html">Khuyến Mãi</a> -->
+                                </li>
+
+                                <li class="nav-item nav-item--separate">
+                                    <a class="" href="../page/about.html">Về chúng tôi</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="" href="../page/store.html">Cửa hàng</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hearer_icon d-flex nav-margin">
+                            <div class="nav-item dropdown">
+                                <div id="user-nav-btn" class="header__navbar-item-login-dropdown" data-dropdown="dropdown-user-menu"><img
+                                        src="../public/image/anonymous-user.jpg"
+                                        onerror="this.onerror=null;this.src='/resources/image/anonymous-user.jpg';"
+                                        alt="Avatar" class="navbar-user-avatar-img" aria-labelledby="navbarDropdown_1">
+                                </div>
+                                <div class="dropdown-menu user-dropdown disable" aria-labelledby="navbarDropdown_1">
+                                    <a class="dropdown-item" href="../page/user-info.html">
+                                        Thông tin tài khoản</a>
+                                    <a class="dropdown-item" href="../page/user-info.html">Lịch sử đơn hàng</a>
+                                    <a id="log-out-btn" class="dropdown-item" href="./login.html">Đăng xuất</a>
+                                </div>
+                            </div>
+                            <div class="nav-item">
+                                <div class="header__navbar-item-shopping-cart" style="position: relative;">
+                                    <a href="../page/shopping-cart.html"><i class="fas fa-shopping-cart shopping-cart-top-menu"></i>
+                                    </a>
+                                    <span class="badge badge-success count-cart-item">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="fake-face disable">
+    </div>
+    <section class="store">
+        <div class="store__image">
+            <p class="extra-bold-text large-text red-text uppercase-text text-center">Hệ thống 10 cửa hàng trên toàn
+                quốc</p>
+        </div>
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12 stikySidebar">
+                    <div class="page_sidebar">
+                        <p class="black-text extra-bold-text uppercase-text">Theo khu vực</p>
+                        <ul>
+                            <li id="all-option-store">
+                                <a class="red-text bold-text regular-text" href="#">
+                                    Tất cả (10)
+                                </a>
+                            </li>
+                            <li id="hn-option-store">
+                                <a class=" black-text regular-text" href="#">
+                                    TP Hà Nội (5)
+                                </a>
+                            </li>
+
+                            <li id="hcm-option-store">
+                                <a class="black-text regular-text" href="#">
+                                    TP Hồ Chí Minh (3)
+                                </a>
+                            </li>
+
+                            <li id="dn-option-store">
+                                <a class="black-text regular-text" href="#">TP Đà Nẵng (2)
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12 col-sm-12 ps-5 pt-3">
+                    <!-- <h3 class="page_title">Khám phá <span>5</span> cửa hàng của chúng tôi ở <span> Thành phố Hà
+                            Nội</span></h3> -->
+                    <div id="right-side" class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="store__card">
+                                    <div class="store__card-image">
+                                        <img src="../public/image/cua-hang/pluto-hn/pluto-loduc.png" alt="">
+                                    </div>
+                                    <div class="store__card-detail text-center">
+                                        <h3 class="red-text semi-large-text">PLUTO LÒ ĐÚC</h3>
+                                        <p class="black-text regular-text">255 Lò Đúc, Đống Mác, Hai Bà Trưng, Hà Nội
+                                        </p>
+                                        <p class="grey-text semi-large-text">9:00 - 22:00</p>
+                                        <a href="https://www.google.com/maps/place/255+P.+L%C3%B2+%C4%90%C3%BAc,+%C4%90%E1%BB%91ng+M%C3%A1c,+Hai+B%C3%A0+Tr%C6%B0ng,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0092595,105.8588974,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abf65669ea1b:0xf1bfaf5c721f8d9b!8m2!3d21.0092545!4d105.8610861?hl=vi-VN" target="blank"><div class="btn btn--orange small-text mb-5">XEM BẢN ĐỒ</div> </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="store__card">
+                                    <div class="store__card-image">
+                                        <img src="../public/image/cua-hang/pluto-hn/pluto-hodacdi.png" alt="">
+                                    </div>
+                                    <div class="store__card-detail text-center">
+                                        <h3 class="red-text semi-large-text">PLUTO HỒ ĐẮC DI</h3>
+                                        <p class="black-text regular-text">25 Hồ Đắc Di, Q.Đống Đa, Hà Nội</p>
+                                        <p class="grey-text semi-large-text">9:00 - 22:00</p>
+                                        <a href="https://www.google.com/maps/place/25+P.+H%E1%BB%93+%C4%90%E1%BA%AFc+Di,+Nam+%C4%90%E1%BB%93ng,+%C4%90%E1%BB%91ng+%C4%90a,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0116623,105.8280991,17z/data=!3m1!4b1!4m9!1m2!2m1!1zMjUgSOG7kyDEkOG6r2MgRGksIFEuxJDhu5FuZyDEkGEsIEjDoCBO4buZaQ!3m5!1s0x3135ab8037e5b2d1:0x764e93193ed712db!8m2!3d21.0116573!4d105.8302878!15sCisyNSBI4buTIMSQ4bqvYyBEaSwgUS7EkOG7kW5nIMSQYSwgSMOgIE7hu5lpkgEQZ2VvY29kZWRfYWRkcmVzcw?hl=vi-VN" target="blank"><div class="btn btn--orange small-text mb-5">XEM BẢN ĐỒ</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="store__card">
+                                    <div class="store__card-image">
+                                        <img src="../public/image/cua-hang/pluto-hn/pluto-vutongphan.jpg" alt="">
+                                    </div>
+                                    <div class="store__card-detail text-center">
+                                        <h3 class="red-text semi-large-text">PLUTO VŨ TÔNG PHAN</h3>
+                                        <p class="black-text regular-text">326 Vũ Tông Phan, Khương Đình, Thanh Xuân, Hà
+                                            Nội</p>
+                                        <p class="grey-text semi-large-text">9:00 - 22:00</p>
+                                        <a href="https://www.google.com/maps/place/326+P.+V%C5%A9+T%C3%B4ng+Phan,+Kh%C6%B0%C6%A1ng+%C4%90%C3%ACnh,+Thanh+Xu%C3%A2n,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@20.9817614,105.8152924,17z/data=!3m1!4b1!4m5!3m4!1s0x3135acf201b1b087:0x939e7c2bc00fee82!8m2!3d20.9817564!4d105.8174811?hl=vi-VN" target="blank"><div class="btn btn--orange small-text mb-5">XEM BẢN ĐỒ</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="store__card">
+                                    <div class="store__card-image">
+                                        <img src="../public/image/cua-hang/pluto-hn/pluto-timescity.jpg" alt="">
+                                    </div>
+                                    <div class="store__card-detail text-center">
+                                        <h3 class="red-text semi-large-text">PLUTO TIMES CITY</h3>
+                                        <p class="black-text regular-text">T5, 458 P. Minh Khai, Vĩnh Phú, Hai Bà Trưng,
+                                            Hà Nội</p>
+                                        <p class="grey-text semi-large-text">9:00 - 22:00</p>
+                                        <a href="https://www.google.com/maps/place/Times+city/@20.9956038,105.8666324,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ad7c2bd7b9ad:0x324e84fd6d12f1c9!8m2!3d20.9955988!4d105.8688211?hl=vi-VN" target="blank"><div class="btn btn--orange small-text mb-5">XEM BẢN ĐỒ</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="store__card">
+                                    <div class="store__card-image">
+                                        <img src="../public/image/cua-hang/pluto-hn/pluto-leduan.jpg" alt="">
+                                    </div>
+                                    <div class="store__card-detail text-center">
+                                        <h3 class="red-text semi-large-text">PLUTO LÊ DUẨN</h3>
+                                        <p class="black-text regular-text">119 Đường Lê Duẩn, Nguyễn Du, Đống Đa, Hà Nội
+                                        </p>
+                                        <p class="grey-text semi-large-text">9:00 - 22:00</p>
+                                        <a href="https://www.google.com/maps/place/119+%C4%90.+L%C3%AA+Du%E1%BA%A9n,+Kh%C3%A2m+Thi%C3%AAn,+%C4%90%E1%BB%91ng+%C4%90a,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0184547,105.8389402,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab8ff2c5b65b:0xd1ecd6f21041d34!8m2!3d21.0184497!4d105.8411289?hl=vi-VN" target="blank"><div class="btn btn--orange small-text mb-5">XEM BẢN ĐỒ</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="container pt-4">
+                <div class="row ">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="footer__logo">
+                            <img src="../public/image/logo/footer-logo.png" alt="footer-logo">
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__item-icon">
+                                <img src="../public/image/map-market.svg" alt="map-market">
+                            </div>
+                            <div class="footer__item-contact white-text ps-2">
+                                <p>25 Hồ Đắc Di - Đống Đa - Hà Nội</p>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__item-icon">
+                                <img src="../public/image/phone.svg" alt="map-market">
+                            </div>
+                            <div class="footer__item-contact white-text ps-2">
+                                <p>0888 202 082</p>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__item-icon">
+                                <img src="../public/image/mail.svg" alt="map-market">
+                            </div>
+                            <div class="footer__item-contact white-text ps-2">
+                                <p>garanpluto.com.vn</p>
+                            </div>
+                        </div>
+                        <div class="footer__social red-text ms-5">
+                            <i class="fab fa-facebook-f p-2"></i>
+                            <i class="fab fa-twitter p-2"></i>
+                            <i class="fab fa-instagram p-2"></i>
+                            <i class="fab fa-google-plus p-2"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="footer__info white-text pt-4 ms-5">
+                            <h3>THÔNG TIN CƠ BẢN</h3>
+                            <a href="">
+                                <p>Giới thiệu</p>
+                            </a>
+                            <a href="">
+                                <p>Tin tức</p>
+                            </a>
+                            <a href="">
+                                <p>Nhượng quyền</p>
+                            </a>
+                            <a href="">
+                                <p>Điều khoản sử dụng</p>
+                            </a>
+                            <a href="">
+                                <p>Chính sách bảo mật</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="footer__download white-text pt-4 ms-5">
+                            <h3>TẢI ỨNG DỤNG</h3>
+                            <a href="#"><img class="footer__download-image p-1" src="../public/image/download (1).png"
+                                    alt="google-play"></a>
+                            <a href="#"><img class="footer__download-image p-1" src="../public/image/download.png"
+                                    alt="app-store"></a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="white-text">
+                <div class="footer__company-name-and-design-info white-text">
+                    <p>Công ty CP Thực phẩm và Đồ uống Pluto</p>
+                    <p>Designed by Mai Anh Phung</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+        <!-- Axios -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+        <script src="../public/js/api.js"></script>
+        <script src="../public/js/main.js"></script>
+        <script src="../public/js/base.js"></script>
+        <script src="../public/js/store.js"></script>
+
+</body>
+
+</html>

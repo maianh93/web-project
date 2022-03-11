@@ -1,0 +1,132 @@
+@import url(./base.css);
+
+body {
+    background-color: var(--beige-color);
+}
+
+.dialog-body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 16px;
+    background-color: transparent;
+    min-height: 534px;
+    max-width: 607px;
+}
+
+.order-info-body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 16px 16px;
+    background-color: var(--white-color)
+}
+
+.user-picture {
+    position: relative;
+    background-image: url(../image/user.png) no-repeat center;
+    background-position: bottom;
+    height: 471px;
+    background-size: contain;
+    display: block;
+    background-color: var(--white-color);
+}
+
+.user-picture p {
+    position: absolute;
+    left: 40%;
+}
+
+.not-update {
+    opacity: 0.6;
+}
+
+.not-update:hover {
+    opacity: 0.6;
+    cursor: not-allowed
+}
+
+td, tr {
+    height: 50px;
+    vertical-align: center;
+}
+
+@media (max-width: 1400px) {
+    .user-picture {
+        height: 418px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .user-picture {
+        height: 348px;
+    }
+}
+  
+@media (max-width: 991px) {
+    .dialog {
+        left: 0%;
+    }
+
+    .price-right {
+        text-align: right;
+        padding-right: 0px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    table {
+        width: 600px;
+    }
+    .user-picture {
+        margin-top: 60px;
+        height: 278px;
+    }
+
+    .user-picture p {
+        left: 32%;
+    }
+}
+
+@media (max-width: 768px) {
+    .float-end {
+        float: left !important;
+        padding-left: 12px !important;
+        padding-top: 12px !important;
+    }
+
+    .order-info-body {
+        max-width: 507px;
+    }
+
+    .order-info {
+        padding-top: 20px;
+    }
+
+    .confirm-btn {
+        margin-top: 20px;
+    }
+    table {
+        width: 600px;
+    }
+    .user-picture {
+        margin-top: 60px;
+        height: 578px;
+    }
+    .user-picture p {
+        left: 42%;
+    }
+}
+
+@media (max-width: 576px) {
+    table {
+        width: 500px;
+    }
+    .user-picture {
+        margin-top: 60px;
+        height: 447px;
+    }
+
+}
+
+

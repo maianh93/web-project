@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Owlcarousel -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+    <!-- Personal -->
+    <link rel="stylesheet" href="../lib/font/font.css">
+    <link rel="stylesheet" href="../public/css/checkout.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="main_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 nav-margin">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="../index.html">
+                            <span>
+                                <img src="../public/image/logo/header-logo.png" alt="header-logo">
+                            </span>
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="menu_icon">
+                                <i class="fas fa-bars"></i>
+                            </span>
+                        </button>
+                        <div class="navbar-collapse main-menu-item collapse" id="navbarNavAltMarkup">
+                            <ul class="navbar-nav">
+                                <li id="menu-nav-btn" class="nav-item dropdown nav-item--separate">
+                                    <a class="dropdown-toggle" href="#" id="navbarDropdown_1" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Thực Đơn
+                                    </a>
+                                    <div id="product-dropdown" class="dropdown-menu menu-dropdown disable" aria-labelledby="navbarDropdown_1">
+                                        <a class="dropdown-item" href="category.html">
+                                            Gà giòn không xương</a>
+                                        <a class="dropdown-item" href="single-product.html">Gà giòn cay</a>
+                                        <a class="dropdown-item" href="single-product.html">Gà giòn không cay</a>
+                                        <a class="dropdown-item" href="single-product.html">Hamburger</a>
+                                        <a class="dropdown-item" href="single-product.html">Món ăn kèm</a>
+                                        <a class="dropdown-item" href="./detail-menu.html">Món lẻ</a>
+                                        <a class="dropdown-item" href="single-product.html">Đồ uống - Tráng miệng</a>
+                                    </div>
+                                </li>
+                                <li id="promotion-menu" class="nav-item nav-item--separate">
+                                    <!-- <a class="" href="./page/km-1.html">Khuyến Mãi</a> -->
+                                </li>
+
+                                <li class="nav-item nav-item--separate">
+                                    <a class="" href="../page/about.html">Về chúng tôi</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="" href="../page/store.html">Cửa hàng</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hearer_icon d-flex nav-margin">
+                            <div class="nav-item dropdown">
+                                <div id="user-nav-btn" class="header__navbar-item-login-dropdown" data-dropdown="dropdown-user-menu"><img
+                                        src="../public/image/anonymous-user.jpg"
+                                        onerror="this.onerror=null;this.src='/resources/image/anonymous-user.jpg';"
+                                        alt="Avatar" class="navbar-user-avatar-img" aria-labelledby="navbarDropdown_1">
+                                </div>
+                                <div class="dropdown-menu user-dropdown disable" aria-labelledby="navbarDropdown_1">
+                                    <a class="dropdown-item" href="../page/user-info.html">
+                                        Thông tin tài khoản</a>
+                                    <a class="dropdown-item" href="../page/user-info.html">Lịch sử đơn hàng</a>
+                                    <a id="log-out-btn" class="dropdown-item" href="./login.html">Đăng xuất</a>
+                                </div>
+                            </div>
+                            <div class="nav-item">
+                                <div class="header__navbar-item-shopping-cart" style="position: relative;">
+                                    <a href="../page/shopping-cart.html"><i class="fas fa-shopping-cart shopping-cart-top-menu"></i>
+                                    </a>
+                                    <span class="badge badge-success count-cart-item">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="fake-face disable">
+    </div>
+    <div class="container">
+        <div class="row pt-5 mt-5">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="dialog">
+                    <div class="dialog-body">
+                        <div class="dialog-body__logo">
+                            <img src="/public/image/logo/footer-logo.png" alt="">
+                        </div>
+                        <div class="container">
+                            <div class="row pt-2">
+                                <h3 class="red-text uppercase-text text-center bold-text pb-3">Thông tin vận chuyển</h3>
+                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                    <div class="small-text black-text">Tên</div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="input-box">
+                                        <input type="text" id="firstname" name="firstname" value="" title="Tên"
+                                            maxlength="255" class="input-text required-entry">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row pt-2">
+                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                    <div class="small-text black-text">Họ</div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="input-box">
+                                        <input type="text" id="lastname" name="lastname" title="Họ" maxlength="255"
+                                            class="input-text required-entry">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row pt-2">
+                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                    <div class="small-text black-text">Địa chỉ</div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="input-box">
+                                        <input type="text" id="address" name="address" title="Địa chỉ"
+                                            class="input-text required-entry">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row pt-2">
+                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 mx-auto">
+                                            <select id="province-list">
+                                                <option>Tỉnh/Thành phố</option>
+                                            </select>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row pt-2">
+                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
+                                            <select id="district-list">
+                                                <option>Quận/Huyện</option>
+                                            </select>
+                                        </div> 
+                                        <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
+                                            <select id="ward-list">
+                                                <option>Huyện/Thị xã</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row pt-2">
+                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                    <div class="small-text black-text">Email</div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="input-box">
+                                        <input type="email" autocapitalize="off" autocorrect="off" spellcheck="false"
+                                            name="email" id="email_address" title="Địa chỉ email"
+                                            class="input-text validate-email required-entry">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row pt-2">
+                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                    <div class="small-text black-text">Điện thoại</div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="input-box">
+                                        <input type="text" name="phone_number" id="phone_number" value=""
+                                            title="Điện thoại" class="input-text  required-entry">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row pt-2">
+                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                    <div class="small-text black-text">Ghi chú</div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="input-box">
+                                        <textarea name="order_comment" id="order_comment" rows="4"
+                                            class="textarea-text valid"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row pt-2">
+                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="btn btn--login bold-text">Đặt hàng</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container pb-4">
+                            <div class="row pt-2">
+                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="btn btn--checkout bold-text">Đăng ký hoặc đăng nhập</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="order-info">
+                    <div class="order-info-body">
+                        <div class="dialog-body__logo">
+                            <img src="/public/image/logo/footer-logo.png" alt="">
+                        </div>
+                        <div class="container">
+                            <div class="row pt-2">
+                                <h3 class="red-text uppercase-text text-center bold-text pb-3">Thông tin đơn hàng</h3>
+                                <div style="overflow-x:auto;">
+                                    <table class="text-center pt-4">
+                                        <tr>
+                                            <th
+                                                class="col-lg-3 col-md-3 col-sm-12 bold-text black-text small-text uppercase-text">
+                                                tên sản phẩm</th>
+                                            <th
+                                                class="col-lg-3 col-md-3 col-sm-12 bold-text black-text small-text uppercase-text">
+                                                số lượng</th>
+                                            <th
+                                                class="col-lg-3 col-md-3 col-sm-12 bold-text black-text small-text uppercase-text">
+                                                đơn giá</th>
+                                            <th
+                                                class="col-lg-3 col-md-3 col-sm-12 bold-text black-text small-text uppercase-text">
+                                                thành tiền</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-lg-3 col-md-3 col-sm-12">COMBO GÀ GIÒN KHÔNG XƯƠNG (3 MIẾNG)
+                                            </td>
+                                            <td class="col-lg-3 col-md-3 col-sm-12">01</td>
+                                            <td class="col-lg-3 col-md-3 col-sm-12">69.000đ</td>
+                                            <td class="col-lg-3 col-md-3 col-sm-12 price-right">69.000đ</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-lg-3 col-md-3 col-sm-12">COMBO GÀ GIÒN CAY (3 MIẾNG)</td>
+                                            <td class="col-lg-3 col-md-3 col-sm-12">02</td>
+                                            <td class="col-lg-3 col-md-3 col-sm-12">115.000đ</td>
+                                            <td class="col-lg-3 col-md-3 col-sm-12 price-right">230.000đ</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="container">
+                            <div class="row">
+                                <table>
+                                    <tr>
+                                        <th
+                                            class="col-lg-4 col-md-3 col-sm-12 bold-text black-text small-text uppercase-text">
+                                            <span>tổng cộng</span></th>
+
+                                        <td
+                                            class="col-lg-3 col-md-3 col-sm-12 bold-text black-text small-text price-right">
+                                            299.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="col-lg-4 col-md-3 col-sm-12 black-text small-text uppercase-text">
+                                            giảm giá</th>
+                                        <td class="col-lg-3 col-md-3 col-sm-12 price-right">-19.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="col-lg-4 col-md-3 col-sm-12 black-text small-text uppercase-text">phí
+                                            ship</th>
+                                        <td class="col-lg-3 col-md-3 col-sm-12 price-right">30.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <th
+                                            class="col-lg-4 col-md-3 col-sm-12 black-text small-text uppercase-text bold-text">
+                                            tổng thanh toán</th>
+                                        <td class="col-lg-3 col-md-3 col-sm-12 bold-text price-right">310.000đ</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row pt-5 pb-5">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <a href="./shopping-cart.html"><div class="btn btn--white">Quay lại giỏ hàng</div></a>
+            </div>
+            <div class="confirm-btn col-lg-6 col-md-6 col-sm-12">
+                <a href="../index.html"><div class="btn btn--orange float-end">Đặt hàng</div></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="container mt-4 pt-4">
+                <div class="row ">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="footer__logo">
+                            <img src="../public/image/logo/footer-logo.png" alt="footer-logo">
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__item-icon">
+                                <img src="../public/image/map-market.svg" alt="map-market">
+                            </div>
+                            <div class="footer__item-contact white-text ps-2">
+                                <p>25 Hồ Đắc Di - Đống Đa - Hà Nội</p>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__item-icon">
+                                <img src="../public/image/phone.svg" alt="map-market">
+                            </div>
+                            <div class="footer__item-contact white-text ps-2">
+                                <p>0888 202 082</p>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__item-icon">
+                                <img src="../public/image/mail.svg" alt="map-market">
+                            </div>
+                            <div class="footer__item-contact white-text ps-2">
+                                <p>garanpluto.com.vn</p>
+                            </div>
+                        </div>
+                        <div class="footer__social red-text ms-5">
+                            <i class="fab fa-facebook-f p-2"></i>
+                            <i class="fab fa-twitter p-2"></i>
+                            <i class="fab fa-instagram p-2"></i>
+                            <i class="fab fa-google-plus p-2"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="footer__info white-text pt-4 ms-5">
+                            <h3>THÔNG TIN CƠ BẢN</h3>
+                            <a href="">
+                                <p>Giới thiệu</p>
+                            </a>
+                            <a href="">
+                                <p>Tin tức</p>
+                            </a>
+                            <a href="">
+                                <p>Nhượng quyền</p>
+                            </a>
+                            <a href="">
+                                <p>Điều khoản sử dụng</p>
+                            </a>
+                            <a href="">
+                                <p>Chính sách bảo mật</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="footer__download white-text pt-4 ms-5">
+                            <h3>TẢI ỨNG DỤNG</h3>
+                            <a href="#"><img class="footer__download-image p-1" src="../public/image/download (1).png"
+                                    alt="google-play"></a>
+                            <a href="#"><img class="footer__download-image p-1" src="../public/image/download.png"
+                                    alt="app-store"></a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="white-text">
+                <div class="footer__company-name-and-design-info white-text">
+                    <p>Công ty CP Thực phẩm và Đồ uống Pluto</p>
+                    <p>Designed by Mai Anh Phung</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+        <!-- Axios -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="../public/js/api.js"></script>
+        <script src="../public/js/base.js"></script>
+        <script src="../public/js/main.js"></script>
+</body>
+
+</html>

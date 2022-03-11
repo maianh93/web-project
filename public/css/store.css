@@ -1,0 +1,125 @@
+@import url(./base.css);
+
+.store{
+    background-color: var(--beige-color);
+}
+
+.store__image {
+    /* position: relative; */
+    background-image: url(../image/cua-hang/pluto-hn/pluto-timescity.jpg);
+    height: 307px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    /* opacity: 0.8; */
+}
+
+.store__image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    opacity: 0.4;
+}
+
+.store__image p {
+    /* position: absolute; */
+    padding-top: 140px;
+    margin: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.store__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+}
+
+.store__card {
+    background-color: var(--white-color);
+    /* width: 344px; */
+    flex: 0 0 calc(40% - 24px);
+    margin: 0 12px 40px;
+}
+
+.store__card-image {
+    overflow: hidden;
+    object-fit: cover ;
+    height: 298px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.store__card h3 {
+    margin: 35px 0;
+    font-weight: 500;
+}
+
+.store__card p {
+    height: 56px;
+    padding: 0 15px;
+    font-weight: 400;
+}
+
+.page_sidebar a:hover {
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+.stikySidebar {
+    width: 19.5%;
+    border-right: solid 1px var(--black-color);
+    top: 60px;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    z-index: 2;
+}
+
+@media (max-width: 1400px) {
+    .store__card-image {
+        height: 205px;
+    }
+}
+
+@media (max-width: 992px) {
+    .stikySidebar {
+        width: 100%;
+        border-right: none;
+        top: 60px;
+        padding: auto;
+        margin-bottom: 12px;
+        z-index: 2;
+    }
+
+    .store_list {
+        text-align: center;
+    }
+    
+    .page_sidebar {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .store__card-image {
+        height: 205px;
+    }
+    
+}
+
+@media (max-width: 765px) {
+    .store__card-image {
+        height: 171px;
+    }
+}
+

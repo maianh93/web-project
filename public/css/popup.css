@@ -1,0 +1,120 @@
+@import url(./base.css);
+
+.dialog-body {
+    /* display: flex; */
+    min-width: 595px;
+    flex-direction: column;
+    max-width: 732px;
+    position: fixed;
+    top: 34%;
+    left: 34%;
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid var(--orange-red-color);
+}
+
+.dialog-body__input-volumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog-body__input-volumn-item {
+    background-color: var(--orange-red-color);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.dialog-body__input-volumn-option {
+    background-color: var(--white-color);
+    border: solid 1px var(--orange-red-color);
+}
+
+.dialog-body__deal-confirm-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.dialog-body__input-volumn-quantity input {
+    width: 54px;
+    margin: 0 15px;
+}
+
+
+.input-volumn {
+    width: 157px;
+    border-color: var(--white-color);
+    border: solid 1px var(--orange-red-color);
+}
+
+.overlay {
+    background-color: var(--grey-color);
+}
+
+
+.quantity input {
+    display: block;
+    width: 42px;
+    height: 50px;
+    border-radius: 4px;
+    align-items: center;
+    text-align: center;
+    margin: 0 3px;
+      border: 1px solid var(--orange-color);
+}
+
+.quantity-icon {
+    transform: translateY(18%);
+    cursor: pointer; 
+    margin: 0 20px;
+}
+
+@media (max-width: 991px) {
+    .dialog-body {
+        /* display: flex; */
+        min-width: 595px;
+        flex-direction: column;
+        max-width: 732px;
+        position: fixed;
+        top: 26%;
+        left: 15%;
+        padding: 16px;
+        background-color: #fff;
+        border: 1px solid var(--orange-red-color);
+    }
+}
+
+
+@media (max-width: 765px) {
+    .dialog-body {
+        /* display: flex; */
+        min-width: 175px;
+        flex-direction: column;
+        max-width: 732px;
+        position: fixed;
+        top: 26%;
+        left: 5%;
+        padding: 16px;
+        background-color: #fff;
+        border: 1px solid var(--orange-red-color);
+    }
+
+    .pop-up-price {
+        text-align: center !important;
+    }
+
+    .quantity-center {
+        text-align: center !important;
+    }
+
+    .dialog-body__input-volumn-quantity {
+        margin-left: 55px;
+    }
+}
+
+@media (max-width: 576px) {
+    .info-name {
+        text-align: center !important;
+    }
+}
+
+

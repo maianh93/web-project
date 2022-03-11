@@ -1,0 +1,11 @@
+@import url(./base.css);
+
+body {
+    background-color: var(--beige-color);
+}
+
+.main-menu__card-image {
+    margin-bottom: 25px;
+    height: 250px;
+    box-sizing: border-box;
+}

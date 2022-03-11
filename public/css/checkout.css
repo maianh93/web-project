@@ -1,0 +1,114 @@
+@import url(./base.css);
+
+body {
+    background-color: var(--beige-color);
+}
+
+.dialog-body {
+    border: solid 1px var(--red-color);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 16px;
+    background-color: var(--white-color);
+    min-height: 534px;
+    max-width: 507px;
+}
+
+.order-info-body {
+    border: solid 1px var(--red-color);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 56px 16px;
+    background-color: var(--white-color);
+    min-height: 534px;
+    /* max-width: 457px; */
+}
+
+.dialog-body__logo img {
+    width: 183px;
+}
+
+.textarea-text {
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    background: var(--white-color);
+    border: 1px solid var(--black-color);
+    font-size: 16px;
+    color: #000;
+    width: 100%
+}
+
+.price-right {
+    text-align: right;
+    padding-right: 26px;
+}
+
+#province-list {
+    width: 100%;
+}
+
+select {
+        border-radius: 5px;
+        width: 100%;
+        height: 38px;
+}
+
+@media (max-width: 1200px) {
+    table {
+        width: 500px;
+    }
+}
+
+@media (max-width: 991px) {
+    .dialog {
+        left: 0%;
+    }
+
+    .price-right {
+        text-align: right;
+        padding-right: 0px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 765px) {
+    .float-end {
+        float: left !important;
+        padding-left: 12px !important;
+        padding-top: 12px !important;
+    }
+
+    .order-info-body {
+        max-width: 507px;
+    }
+
+    .order-info {
+        padding-top: 20px;
+    }
+
+    .confirm-btn {
+        margin-top: 20px;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    #ward-list {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    table {
+        width: 600px;
+    }
+}
+
+

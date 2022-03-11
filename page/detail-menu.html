@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Owlcarousel -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+    <!-- Personal -->
+    <link rel="stylesheet" href="../lib/font/font.css">
+    <link rel="stylesheet" href="../public/css/detail-menu.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="main_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 nav-margin">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="../index.html">
+                            <span>
+                                <img src="../public/image/logo/header-logo.png" alt="header-logo">
+                            </span>
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="menu_icon">
+                                <i class="fas fa-bars"></i>
+                            </span>
+                        </button>
+                        <div class="navbar-collapse main-menu-item collapse" id="navbarNavAltMarkup">
+                            <ul class="navbar-nav">
+                                <li id="menu-nav-btn" class="nav-item dropdown nav-item--separate">
+                                    <a class="dropdown-toggle" href="#" id="navbarDropdown_1" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Thực Đơn
+                                    </a>
+                                    <div id="product-dropdown" class="dropdown-menu menu-dropdown disable" aria-labelledby="navbarDropdown_1">
+                                        <a class="dropdown-item" href="category.html">
+                                            Gà giòn không xương</a>
+                                        <a class="dropdown-item" href="single-product.html">Gà giòn cay</a>
+                                        <a class="dropdown-item" href="single-product.html">Gà giòn không cay</a>
+                                        <a class="dropdown-item" href="single-product.html">Hamburger</a>
+                                        <a class="dropdown-item" href="single-product.html">Món ăn kèm</a>
+                                        <a class="dropdown-item" href="./detail-menu.html">Món lẻ</a>
+                                        <a class="dropdown-item" href="single-product.html">Đồ uống - Tráng miệng</a>
+                                    </div>
+                                </li>
+                                <li id="promotion-menu" class="nav-item nav-item--separate">
+                                    <!-- <a class="" href="./page/km-1.html">Khuyến Mãi</a> -->
+                                </li>
+
+                                <li class="nav-item nav-item--separate">
+                                    <a class="" href="../page/about.html">Về chúng tôi</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="" href="../page/store.html">Cửa hàng</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hearer_icon d-flex nav-margin">
+                            <div class="nav-item dropdown">
+                                <div id="user-nav-btn" class="header__navbar-item-login-dropdown" data-dropdown="dropdown-user-menu"><img
+                                        src="../public/image/anonymous-user.jpg"
+                                        onerror="this.onerror=null;this.src='/resources/image/anonymous-user.jpg';"
+                                        alt="Avatar" class="navbar-user-avatar-img" aria-labelledby="navbarDropdown_1">
+                                </div>
+                                <div class="dropdown-menu user-dropdown disable" aria-labelledby="navbarDropdown_1">
+                                    <a class="dropdown-item" href="../page/user-info.html">
+                                        Thông tin tài khoản</a>
+                                    <a class="dropdown-item" href="../page/user-info.html">Lịch sử đơn hàng</a>
+                                    <a id="log-out-btn" class="dropdown-item" href="./login.html">Đăng xuất</a>
+                                </div>
+                            </div>
+                            <div class="nav-item">
+                                <div class="header__navbar-item-shopping-cart" style="position: relative;">
+                                    <a href="../page/shopping-cart.html"><i class="fas fa-shopping-cart shopping-cart-top-menu"></i>
+                                    </a>
+                                    <span class="badge badge-success count-cart-item">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="fake-face disable">
+    </div>
+    <section class="detail-menu">
+        <!-- <div class="container mt-5">
+            <h2 class="extra-large-text red-text extra-bold-text uppercase-text text-center">Món lẻ</h2>
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="detail-menu__card mx-auto">
+                        <div class="detail-menu__card-image">
+                            <img src="../public/image/detail-menu/mon-le/1mieng-k-cay.png" alt="1mieng-gagionkhongcay">
+                        </div>
+                        <div class="detail-menu__info">
+                            <h3 class="regular-text uppercase-text orange-text extra-bold-text mt-3">1 miếng gà giòn
+                                không cay</h3>
+                            <p class="detail-menu__info-content small-text regular-bold-text grey-text pe-3 ps-3">Gà
+                                giòn Cajun tươi mới được ướp với công thức gia vị Louisiana cay tẩm bột thủ công và rán
+                                chín cùng lớp phủ giòn tan</p>
+                            <p class="extra-bold-text green-text pt-3">36.000đ</p>
+                        </div>
+                        <div class="btn btn--red btn--order uppercase-text small-text bold-text mb-4">Đặt mua</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="detail-menu__card mx-auto">
+                        <div class="detail-menu__card-image">
+                            <img src="../public/image/detail-menu/mon-le/1mieng-cay.png" alt="1mieng-gagioncay">
+                        </div>
+                        <div class="detail-menu__info">
+                            <h3 class="regular-text uppercase-text orange-text extra-bold-text mt-3">1 miếng gà giòn cay
+                            </h3>
+                            <p class="detail-menu__info-content small-text regular-bold-text grey-text pe-3 ps-3">Gà
+                                giòn Cajun tươi mới được ướp với công thức gia vị Louisiana không cay, tẩm bột thủ công
+                                và rán chín cùng lớp phủ giòn tan
+                            </p>
+                            <p class="extra-bold-text green-text pt-3">36.000đ</p>
+                        </div>
+                        <div class="btn btn--red btn--order uppercase-text small-text bold-text mb-4">Đặt mua</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="detail-menu__card mx-auto">
+                        <div class="detail-menu__card-image">
+                            <img src="../public/image/detail-menu/mon-le/khoai-tay-chien.png"
+                                alt="khoaitaychien">
+                        </div>
+                        <div class="detail-menu__info">
+                            <h3 class="regular-text uppercase-text orange-text extra-bold-text mt-3">Khoai tây chiên
+                            </h3>
+                            <p class="detail-menu__info-content small-text regular-bold-text grey-text pe-3 ps-3">Khoai
+                                tây chiên mang 100% hương vị Cajun với hỗn hợp gia vị đặc biệt từ Louisiana
+                            </p>
+                            <p class="extra-bold-text green-text pt-3">29.000đ</p>
+                        </div>
+                        <div class="btn btn--red btn--order uppercase-text small-text bold-text mb-4">Đặt mua</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="detail-menu__card mx-auto">
+                        <div class="detail-menu__card-image">
+                            <img src="../public/image/detail-menu/mon-le/burger_ga_1.png" alt="burger-ga">
+                        </div>
+                        <div class="detail-menu__info">
+                            <h3 class="regular-text uppercase-text orange-text extra-bold-text mt-3">Burger gà</h3>
+                            <p class="detail-menu__info-content small-text regular-bold-text grey-text pe-3 ps-3">1
+                                Burger Gà
+                            </p>
+                            <p class="extra-bold-text green-text pt-3">54.000đ</p>
+                        </div>
+                        <div class="btn btn--red btn--order uppercase-text small-text bold-text mb-4">Đặt mua</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="detail-menu__card mx-auto">
+                        <div class="detail-menu__card-image">
+                            <img src="../public/image/detail-menu/mon-le/snack-ca.png" alt="snack-ca">
+                        </div>
+                        <div class="detail-menu__info">
+                            <h3 class="regular-text uppercase-text orange-text extra-bold-text mt-3">4 miếng snack cá
+                            </h3>
+                            <p class="detail-menu__info-content small-text regular-bold-text grey-text pe-3 ps-3">4
+                                miếng Snack cá
+                            </p>
+                            <p class="extra-bold-text green-text pt-3">34.000đ</p>
+                        </div>
+                        <div class="btn btn--red btn--order uppercase-text small-text bold-text mb-4">Đặt mua</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="detail-menu__card mx-auto">
+                        <div class="detail-menu__card-image">
+                            <img src="../public/image/detail-menu/mon-le/snack-muc.png" alt="snack-muc">
+                        </div>
+                        <div class="detail-menu__info">
+                            <h3 class="regular-text uppercase-text orange-text extra-bold-text mt-3">4 miếng snack mực
+                            </h3>
+                            <p class="detail-menu__info-content small-text regular-bold-text grey-text pe-3 ps-3">4
+                                miếng Snack mực
+                            </p>
+                            <p class="extra-bold-text green-text pt-3">39.000đ</p>
+                        </div>
+                        <div class="btn btn--red btn--order uppercase-text small-text bold-text mb-4">Đặt mua</div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="container mt-5">
+            <h2 class="extra-large-text black-text extra-bold-text uppercase-text">Sản phẩm đang khuyến mãi</h2>
+            <div class="container mt-5">
+                <div class="row text-center">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="detail-menu__card mx-auto">
+                            <div class="detail-menu__card-image">
+                                <img src="../public/image/detail-menu/khuyen-mai/2-tang-2.jpg" alt="mua-2-tang-2">
+                            </div>
+                            <div class="detail-menu__info">
+                                <h3 class="regular-text uppercase-text orange-text extra-bold-text mt-3">MUA 1 TẶNG 1 -
+                                    2 MIẾNG GÀ</h3>
+                                <p class="detail-menu__info-content small-text regular-bold-text grey-text pe-3 ps-3">
+                                    Mua Combo 2 Gà Giòn + Nước tặng 2 Gà Giòn <br><br>
+                                    ÁP DỤNG GIAO HÀNG TẬN NƠI
+                                </p>
+                                <p class="extra-bold-text green-text pt-3">91.000đ</p>
+                            </div>
+                            <div class="btn btn--red btn--order uppercase-text small-text bold-text mb-4">Đặt mua</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="detail-menu__card mx-auto">
+                            <div class="detail-menu__card-image">
+                                <img src="../public/image/detail-menu/khuyen-mai/3-tang-3.jpg" alt="mua-3-tang-3">
+                            </div>
+                            <div class="detail-menu__info">
+                                <h3 class="regular-text uppercase-text orange-text extra-bold-text mt-3">MUA 1 TẶNG 1 -
+                                    3 MIẾNG GÀ</h3>
+                                <p class="detail-menu__info-content small-text regular-bold-text grey-text pe-3 ps-3">
+                                    Mua Combo 3 Gà Giòn + Nước tặng 3 Gà Giòn <br><br>
+                                    ÁP DỤNG GIAO HÀNG TẬN NƠI
+                                </p>
+                                <p class="extra-bold-text green-text pt-3">127.000đ</p>
+                            </div>
+                            <div class="btn btn--red btn--order uppercase-text small-text bold-text mb-4">Đặt mua</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <div class="dialog-body disable">
+        <div class="dialog-body__input-volumn">
+            <div class="dialog-body__input-volumn-item">
+                <p class="white-text text-center semi-large-text bold-text pt-2">Khoai tây chiên</p>
+            </div>
+            <div class=" container beige-background">
+                <div class="row mt-2 p-3">
+                    <p class="quantity-center col-lg-6 col-md-6 col-sm-12 orange-red-text bold-text semi-large-text pt-2">Số lượng
+                    </p>
+                    <div class="col-lg-6 col-md-6 col-sm-12 dialog-body__input-volumn-quantity d-flex">
+                        <div class="quantity">
+                            <div class="d-flex">
+                                <div class="quantity-icon">
+                                    <i onclick="updateTotalProduct(-1)" class="far fa-minus-square extra-bold-text orange-text fa-2x"></i>
+                                </div>
+                                <div class="quantity-value">
+                                    <input class="orange-text extra-bold-text" type="text" value="1">
+                                </div>
+                                <div class="quantity-icon">
+                                    <i onclick="updateTotalProduct(1)" class="far fa-plus-square extra-bold-text orange-text fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row pt-3">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="uppercase-text semi-large-text bold-text text-center">Tổng tiền:</div>
+                </div>
+                <div id="pop-up-price" class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="pop-up-price semi-large-text bold-text green-text">29.000đ</div>
+                </div>
+            </div>
+        </div>
+        <div class="dialog-body__deal-confirm-btn">
+            <div class="container pt-3">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                        <div  id="add-to-cart" class="btn btn--orange-red uppercase-text btn--bigger btn--confirm">Thêm vào giỏ hàng</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <footer>
+        <div class="footer">
+            <div class="container mt-4 pt-4">
+                <div class="row ">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="footer__logo">
+                            <img src="../public/image/logo/footer-logo.png" alt="footer-logo">
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__item-icon">
+                                <img src="../public/image/map-market.svg" alt="map-market">
+                            </div>
+                            <div class="footer__item-contact white-text ps-2">
+                                <p>25 Hồ Đắc Di - Đống Đa - Hà Nội</p>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__item-icon">
+                                <img src="../public/image/phone.svg" alt="map-market">
+                            </div>
+                            <div class="footer__item-contact white-text ps-2">
+                                <p>0888 202 082</p>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__item-icon">
+                                <img src="../public/image/mail.svg" alt="map-market">
+                            </div>
+                            <div class="footer__item-contact white-text ps-2">
+                                <p>garanpluto.com.vn</p>
+                            </div>
+                        </div>
+                        <div class="footer__social red-text ms-5">
+                            <i class="fab fa-facebook-f p-2"></i>
+                            <i class="fab fa-twitter p-2"></i>
+                            <i class="fab fa-instagram p-2"></i>
+                            <i class="fab fa-google-plus p-2"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="footer__info white-text pt-4 ms-5">
+                            <h3>THÔNG TIN CƠ BẢN</h3>
+                            <a href="">
+                                <p>Giới thiệu</p>
+                            </a>
+                            <a href="">
+                                <p>Tin tức</p>
+                            </a>
+                            <a href="">
+                                <p>Nhượng quyền</p>
+                            </a>
+                            <a href="">
+                                <p>Điều khoản sử dụng</p>
+                            </a>
+                            <a href="">
+                                <p>Chính sách bảo mật</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="footer__download white-text pt-4 ms-5">
+                            <h3>TẢI ỨNG DỤNG</h3>
+                            <a href="#"><img class="footer__download-image p-1" src="../public/image/download (1).png"
+                                    alt="google-play"></a>
+                            <a href="#"><img class="footer__download-image p-1" src="../public/image/download.png"
+                                    alt="app-store"></a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="white-text">
+                <div class="footer__company-name-and-design-info white-text">
+                    <p>Công ty CP Thực phẩm và Đồ uống Pluto</p>
+                    <p>Designed by Mai Anh Phung</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+                    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../public/js/base.js"></script>
+    <script src="../public/js/api.js"></script>
+    <script src="../public/js/main.js"></script>
+    <script src="../public/js/detail-menu.js"></script>
+</body>
+
+</html>
