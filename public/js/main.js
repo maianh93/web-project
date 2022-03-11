@@ -9,11 +9,6 @@ const windowElement = document.querySelector(".fake-face");
 
 
 async function loadMainMenu() {
-    console.log(localStorage.getItem("token"))
-    if (localStorage.getItem("token") == undefined) {
-        console.log("ok")
-        window.location = "google.com"
-    } else {
         try {
             console.log("ok")
             const res = await callGetAllCategoriesAPI();
@@ -24,7 +19,6 @@ async function loadMainMenu() {
         } catch (error) {
             console.log(error);
         }
-    }
     
 }
 
